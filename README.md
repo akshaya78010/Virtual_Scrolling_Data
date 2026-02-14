@@ -1,26 +1,138 @@
-<<<<<<< HEAD
-# Virtual-Scrolling-Data
-=======
-<<<<<<< HEAD
-# React + Vite
+#Virtual Scrolling Data
+# 🚀 Virtual Scrolling Data Grid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance virtual scrolling data grid built using React and Vite.  
+This project efficiently renders and handles large datasets (up to millions of rows) without performance issues.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+Rendering thousands or millions of rows normally causes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ❌ Slow performance
+- ❌ UI freezing
+- ❌ High memory usage
 
-## Expanding the ESLint configuration
+This project solves that using **Virtual Scrolling**, where only visible rows are rendered in the DOM.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Virtual-Scrolling-Data
->>>>>>> 9135d79dddb5445cc0c545b9ea78b61e1583fa67
->>>>>>> c2b9e36 (commit)
-# Virtual_Scrolling_Data
-# Virtual_Scrolling_Data
+---
+
+## ⚙️ Tech Stack
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 CSS
+- 🐳 Docker (Optional setup)
+- 📦 Node.js
+
+---
+
+## 🔥 Key Features
+
+- ✅ Virtualized row rendering
+- ✅ Smooth scrolling performance
+- ✅ Efficient memory usage
+- ✅ Dynamic data generation
+- ✅ Clean and responsive UI
+- ✅ Docker support for containerized deployment
+
+---
+
+## 📊 How It Works
+
+Instead of rendering all rows at once:
+
+1. Only visible rows inside the viewport are rendered.
+2. As the user scrolls, rows are dynamically replaced.
+3. This keeps DOM size small and performance high.
+
+---
+
+## 📁 Project Structure
+
+
+Million-virtual-grid/
+│
+├── public/
+├── src/
+│ ├── components/
+│ │ └── VirtualGrid.jsx
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── scripts/
+│ └── generate-data.js
+│
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
+
+
+## 🛠 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+git clone https://github.com/akshaya78010/Virtual-Scrolling-Data.git
+cd Virtual-Scrolling-Data
+
+
+### 2️⃣ Install dependencies
+
+npm install
+
+
+### 3️⃣ Run development server
+
+npm run dev
+
+
+Open:
+http://localhost:5173
+
+
+---
+
+## 🐳 Run Using Docker (Optional)
+
+docker-compose up --build
+
+
+---
+
+## 📈 Performance Optimization Techniques Used
+
+- Virtual DOM optimization
+- Scroll position tracking
+- Dynamic row calculation
+- Lazy rendering
+- Efficient state management
+
+---
+
+## 🎯 Learning Outcomes
+
+- Understanding large dataset rendering
+- DOM performance optimization
+- React component optimization
+- Handling scalable frontend architecture
+
+---
+
+## 🚀 Future Improvements
+
+- Add sorting & filtering
+- Add pagination toggle
+- Add server-side data fetching
+- Add column resizing
+
+---
+
+## 👩‍💻 Author
+
+Hari Priya  
+CSE Student  
+
+---
+
+## ⭐ If you like this project, give it a star!
