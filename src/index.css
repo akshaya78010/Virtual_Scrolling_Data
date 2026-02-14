@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-row {
+  display: flex;
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.grid-cell {
+  flex: 1;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header {
+  font-weight: bold;
+  cursor: pointer;
+  background: #f5f5f5;
+}
+
+.pinned-column {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 2;
+}
+
+.debug-panel {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  z-index: 999;
+}
